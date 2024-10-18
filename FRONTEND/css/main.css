@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* sahiyfadagi asosiy oyna va barcha qilinayotgan amalyotlar 
+   ashu div ichida joylashgan */
+#asosiy__oyna {
+    background-image: url(../img/main-img/Netflix-img-header.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* web aytning container qismi va barcha amalyotlar shu sahiyfa ichida joylashgan */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* web sayt head qismi boshlanish  */
+header {
+    height: 400px;
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0.627);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sahiyfa__nomi {
+    font-size: 50px;
+}
+
+/* tugadi */
+
+
+
+
+
+
+
+
+
+
+/* section kismining boshlanish nuqtasi */
+section {
+    width: 95%;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 15px;
+
+}
+
+
+
+
+/* premyera qatorlari */
+.section__premyeralar {
+    margin: 30px 0;
+}
+
+.chap-btn,
+.ong-btn {
+    background-color: rgb(42, 42, 220);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.chap-btn {
+    left: 0;
+    margin-left: 20px;
+}
+
+.ong-btn {
+    right: 0;
+    margin-right: 20px;
+}
+
+.chap-btn:hover,
+.ong-btn:hover {
+    background-color: #0006b0;
+}
+
+
+.premyera-blook {
+    overflow: hidden;
+    width: 100%;
+}
+
+.premyeralar {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    transition: transform 0.7s ease;
+
+}
+
+.premyera {
+    flex: 0 0 400px;
+    float: left;
+    height: 320px;
+    background-color: #333;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.premyera__img {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.premyera__img img {
+    flex: 0 0 400px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.premyera__text {
+    float: left;
+    width: 100%;
+    margin: 20px 20px;
+    border-radius: 10px;
+}
+
+.premyera__text p {
+    margin: 5px 0;
+}
+
+/* premyera qarori tugadi */
+
+
+
+
+/* kinolar qatori */
+/* section__1-kinoqator boshlaish */
+.section__1-kinoqator,
+.section__2-kinoqator {
+    margin: 20px 0;
+}
+
+
+
+
+
+/* 1-qator */
+.kino__blook-1boolim {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* battinlar */
+.prev-btn,
+.next-btn {
+    background-color: rgb(42, 42, 220);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.prev-btn {
+    left: 0;
+    margin-left: 20px;
+}
+
+.next-btn {
+    right: 0;
+    margin-right: 20px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #0006b0;
+}
+
+/* tugadi */
+.kinolar-1boolim {
+    height: 450px;
+    display: flex;
+    transition: transform 0.7s ease;
+    margin: 40px 0;
+}
+
+.kino {
+    flex: 0 0 250px;
+    height: 450px;
+    background-color: #333;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+
+.kino__rasmi {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.kino__rasmi img {
+    flex: 0 0 250px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.kino__text {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+
+
+/* 2-qator  */
+.kino__blook-2boolim {
+    overflow: hidden;
+    width: 100%;
+}
+
+.chap-btn-2boolim,
+.ong-btn-2boolim {
+    background-color: rgb(42, 42, 220);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.chap-btn-2boolim {
+    left: 0;
+    margin-left: 20px;
+}
+
+.ong-btn-2boolim {
+    right: 0;
+    margin-right: 20px;
+}
+
+.chap-btn-2boolim:hover,
+.ong-btn-2boolim:hover {
+    background-color: #0006b0;
+}
+
+.kinolar-2boolim {
+    height: 450px;
+    transition: transform 0.7s ease;
+    margin: 40px 0;
+    display: flex;
+}
+
+.kino-2boolim {
+    flex: 0 0 250px;
+    height: 450px;
+    overflow: hidden;
+    float: left;
+    background-color: #333;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.kino__2boolim-rasmi {
+    width: 100%;
+    margin: 0 auto;
+    height: 380px;
+    flex: 0 0 250px;
+    border-radius: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.kino__2boolim-rasmi img {
+    flex: 0 0 300px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+.kino__2boolim-text {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.kino__2boolim-text h3 {
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* kino qator tugashi */
+
+
+
+/* 3-qator  */
+.kino__blook-3boolim {
+    overflow: hidden;
+    width: 100%;
+}
+
+.chap-btn-3boolim,
+.ong-btn-3boolim {
+    background-color: rgb(42, 42, 220);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.chap-btn-3boolim {
+    left: 0;
+    margin-left: 20px;
+}
+
+.ong-btn-3boolim {
+    right: 0;
+    margin-right: 20px;
+}
+
+.chap-btn-3boolim:hover,
+.ong-btn-3boolim:hover {
+    background-color: #0006b0;
+}
+
+.kinolar-3boolim {
+    height: 450px;
+    transition: transform 0.7s ease;
+    margin: 40px 0;
+    display: flex;
+}
+
+.kino-3boolim {
+    flex: 0 0 250px;
+    height: 450px;
+    overflow: hidden;
+    float: left;
+    background-color: #333;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.kino__3boolim-rasmi {
+    width: 100%;
+    margin: 0 auto;
+    height: 380px;
+    flex: 0 0 250px;
+    border-radius: 10px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.kino__3boolim-rasmi img {
+    flex: 0 0 300px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+.kino__3boolim-text {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.kino__3boolim-text h3 {
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* kino qator tugashi */
+/* section the end  */
+
+
+
+
+
+
+
+
+
+
+/* footer boshlanish qismi  */
+footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.196);
+}
+
+
+
+
+.footer__the-end {
+    font-size: 50px;
+}
+
+/* footer the end  */
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 2000px) {
+    .kino {
+        flex: 0 0 230px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .kino {
+        flex: 0 0 200px;
+    }
+
+    .premyera {
+        flex: 0 0 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kino {
+        flex: 0 0 180px;
+    }
+
+    .premyera {
+        flex: 0 0 300px;
+    }
+
+    .sahiyfa__nomi {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .kino {
+        flex: 0 0 150px;
+    }
+
+    .premyera {
+        flex: 0 0 250px;
+    }
+
+    .sahiyfa__nomi {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kino {
+        flex: 0 0 130px;
+    }
+
+    .premyera {
+        flex: 0 0 200px;
+    }
+
+    .sahiyfa__nomi {
+        font-size: 30px;
+    }
+
+    header {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .kino {
+        flex: 0 0 100px;
+    }
+
+    .premyera {
+        flex: 0 0 150px;
+    }
+
+    .sahiyfa__nomi {
+        font-size: 25px;
+    }
+
+    header {
+        height: 250px;
+    }
+}
+
+@media (max-width: 300px) {
+    .kino {
+        flex: 0 0 80px;
+    }
+
+    .premyera {
+        flex: 0 0 120px;
+    }
+
+    .sahiyfa__nomi {
+        font-size: 20px;
+    }
+
+    header {
+        height: 200px;
+    }
+}
